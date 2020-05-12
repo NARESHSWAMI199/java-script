@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>solve javascript Challanges</title>
+</head>
+
+<body>
+    <!-- Challange 1: -->
+    <div class="container-1 mt-5">
+        <h2>Challange 1: Your Age in Days</h2>
+        <div class="text-center flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger " onclick="reset()">reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Container-2">
+
+        <h2>Challange 2 : Cat Genrator</h2>
+
+        <button class="btn btn-success" id="cat-genrator" onclick="gentrateCat()">Genrate</button>
+
+        <div class="flex-box-container-2" id="contain-cat">
+
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challange 3 : Rock , Paper , Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-box">
+            <img id="rock" src="static/image/challange3/closes-bug-png-image-29970.png" height="150" width="150"
+                onclick="rpsGame(this)" alt="">
+            <!--here the (this) was represent the image atributes-->
+            <img id="paper" src="static/image/challange3/images.jpeg" height="150" width="150" onclick="rpsGame(this)"
+                alt="">
+            <img id="scissors"
+                src="static/image/challange3/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-bitcoin-money-currency-computing-stock-mining-bankwofd5b58bjhmqo5sq0z1.png"
+                height="150" width="150" onclick="rpsGame(this)" alt="">
+        </div>
+    </div>
+
+
+    <div class="container-4">
+        <h2>Challange 4 : Change the color of All buttons</h2>
+
+        <div class="flex-box-color-picker" id="flex-box-cont">
+            <form action="">
+                <select name="backdrop" id="background" onchange="btnColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">wee !</button>
+            <button class="btn btn-danger">yahoo</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Facebook</button>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container-5">
+        <h1> Challange 6 : BlackJack</h1>
+        <h3> <span id="blackjack-result">Let's Play</span> </h3>
+
+        <div class="flex-blackjack-row-1">
+            <div class="your-box" id="your-box" >
+                <h2>You : <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div class="dealer-box" id="dealer-box">
+                <h2> Dealer : <span id="dealer-blackjack-result"> 0</span> </h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+
+            </div>
+        </div>
+
+
+        <div class="flex-blackjack-row-3">
+
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Drows</th>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <span id="wins">0</span>
+                    </td>
+                    <td>
+                        <span id="losses">0</span>
+                    </td>
+
+                    <td>
+                        <span id="drows">0</span>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="This is the basic">
+        <!-- <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script> -->
+        <!-- <script src="home.js"></script> -->
+        <!-- <script src="string.js"></script> -->
+        <!-- <script src="arrays.js"></script> -->
+        <!-- <script src="dict_or_object.js"></script> -->
+        <!-- <script src="controls.js"></script> -->
+        <!-- HEre We are working on .json files and use like a javascript -->
+        <!-- <script>
+        // Here i can't use single and double brackets so for change in stirng i am using (``)
+
+        let sudents = `[
+           {
+               "name": "naresh",
+               "age": 19,
+               "height": 5.10
+           },
+   
+           {
+               "name": "manish",
+               "age": 22,
+               "height": 6
+           }
+       ]`
+   
+       console.log(JSON.parse(sudents));
+       console.log(JSON.parse(sudents)[0].age);  // you can get value like that
+
+
+       // you can use using JSON.parse() can change a json file code in a javascript normal code
+   
+        </script> -->
+    </div>
+
+
+    <script src="static/js/script.js"></script>
+
+
+    <!-- ---------------------------------------------------------------- -->
+
+
+
+
+
+</body>
+
+</html>
